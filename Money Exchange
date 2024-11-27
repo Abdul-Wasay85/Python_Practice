@@ -1,0 +1,71 @@
+def wasayconverter():
+    print("\n\tAssalamualaikum!:")
+    print("1. Walaikum Asalam")
+    print("2. Jai Hind")
+ 
+    x = input("Enter your choice{1,2}: ")
+    
+    if x == "1":
+        print("Money Exchange Menu:")
+        print("1. Euro to Pakistani Rupees")
+        print("2. USD to Pakistani Rupees")
+        print("3. Dinar to Pakistani Rupees")
+        print("4. Pound to Pakistani Rupees")
+        print("5. Dirham to Pakistani Rupees")
+
+        choice = input("Enter the number corresponding to your choice: ")
+      
+        if choice == "1":
+            euro = input("Enter the number of euros you have: ")
+            if euro.replace('.', '', 1).isdigit():
+                euro = float(euro)
+                ans = euro * 292.11
+                print(f"You have {ans} Pakistani Rupees.")
+            else:
+                print("Please enter a valid number.")
+
+        elif choice == "2":
+            usd = input("Enter the number of dollars you have: ")
+            if usd.replace('.', '', 1).isdigit():
+                usd = float(usd)
+                ans = usd * 278.55
+                print(f"You have {ans} Pakistani Rupees.")
+            else:
+                print("Please enter a valid number.")
+
+        elif choice == "3":
+            dinar = input("Enter the number of dinars you have: ")
+            if dinar.replace('.', '', 1).isdigit(): 
+                dinar = float(dinar)
+                ans = dinar * 902.64
+                print(f"You have {ans} Pakistani Rupees.")
+            else:
+                print("Please enter a valid number.")
+
+        elif choice == "4":
+            pound = input("Enter the number of pounds you have: ")
+            if pound.replace('.', '', 1).isdigit():
+                pound = float(pound)
+                ans = pound * 348.30
+                print(f"You have {ans} Pakistani Rupees.")
+            else:
+                print("Please enter a valid number.")
+
+        elif choice == "5":
+            dirham = input("Enter the number of dirhams you have: ")
+            if dirham.replace('.', '', 1).isdigit():  
+                dirham = float(dirham)
+                ans = dirham * 75.62
+                print(f"You have {ans} Pakistani Rupees.")
+            else:
+                print("Please enter a valid number.")
+
+        else:
+            print("Invalid choice. Please try again.")
+    
+    else:
+        print("Sorry brother we only deal with muslims")
+
+wasayconverter()
+print("~Press F5 to use your menu again")
+
